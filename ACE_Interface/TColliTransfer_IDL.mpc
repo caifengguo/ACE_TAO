@@ -1,0 +1,13 @@
+project(TColliTransferIDL): taoidldefaults,amh,ami{
+  sharedname = TColliTransferIDL
+  dynamicflags += TCOLLITRANSFER_EXPORT_BUILD_DLL
+  idlflags     += -Wb,export_macro=TColliTransfer_Export_Export\
+			      -Wb,export_include=TColliTransfer_Export.h
+  dllout       = ./bin
+  libout       = ./lib
+
+ 
+  IDL_Files {
+    TColliTransfer_IDL.idl
+  }
+}

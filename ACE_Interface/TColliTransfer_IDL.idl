@@ -1,0 +1,16 @@
+#ifndef TCOLLI_TRANSFER_IDL_H
+#define TCOLLI_TRANSFER_IDL_H
+
+
+module GCF
+{
+	interface StoreImage
+	{
+		/// 存储图片接口
+		long image_store( in long log_id );
+		///获取图片
+		long image_fetch(in long log_id, out long scene);
+	};
+};
+
+#endif;
